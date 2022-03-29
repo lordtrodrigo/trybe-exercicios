@@ -10,4 +10,6 @@ sair do carro
 trancar o carro
 
 entrar na feira
-procurar
+procura as frutas
+comprar
+voltar pra casa
