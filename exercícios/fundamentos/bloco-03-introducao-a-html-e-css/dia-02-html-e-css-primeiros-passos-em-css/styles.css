@@ -1,0 +1,27 @@
+/* Estilo da página com arquivo externo */
+
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+    font-style: oblique;
+    line-height: 100px;
+}
+p {
+    font-weight: 600;
+    font-size: 3em;
+}
+body {
+    font-size: 16px;
+    line-height: 27px;
+    background-color: beige;
+}
+.texts {
+    background-color: bisque;
+}
+#unordered-style {
+    text-decoration: underline;
+}
+.yellow {background-color: yellow;}
+.red {background-color: red;}
+.brown {background-color: brown;}
