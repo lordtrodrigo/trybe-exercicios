@@ -9,3 +9,38 @@ li:hover {
 li:active {
     color: blue;
 }
+
+li {
+    list-style: none;
+}
+
+div:hover {
+    border: 2px solid;
+}
+
+.blocks {
+    padding: 50px 25px;
+}
+
+.yellow {
+    color: yellow;
+    font-style: italic;
+}
+
+.green {
+    color: green;
+}
+
+.brown {
+    color: brown;
+    font-style: italic;
+}
+
+.grey {
+    color: grey;
+}
+
+.salmon {
+    color: salmon;
+    font-style: italic;
+}
