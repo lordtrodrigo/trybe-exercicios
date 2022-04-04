@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+}
+
+.first {
+    background-color: rgb(235, 200, 84);
+    font-size: 20px;
+    text-align: center;
+    list-style: none;
+    padding: 20px 70px;
+    display: inline-block;
+}
+
+.second {
+    background-color: rgb(219, 219, 219);
+    font-size: 20px;
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    padding: 20px 70px;
+
+}
+
+.third {
+    background-color: rgb(170, 142, 106);
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 70px;
+    list-style: none;
+    display: inline-block;
+}
+
+#podium {
+    text-align: center;
+}
+
+.section {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
