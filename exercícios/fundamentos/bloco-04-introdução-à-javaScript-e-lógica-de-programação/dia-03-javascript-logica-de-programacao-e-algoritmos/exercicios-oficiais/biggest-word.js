@@ -22,32 +22,42 @@ let comparateWordSize = 0;
 
 let checkNotLow = 0;
 
-let biggestString = '';
+let biggestString = [];
 
 let values = [];
 
 let highestValue = 0;
 
-for (index = 0; index < array.length; index += 1) {
+let firstStringSize = array.length;
+
+
+for (let index = 0; index < array.length; index += 1) {
     currentWordSize = array[index].length;
-    for (index2 = 0; index2 < array.length; index2 += 1) {
+    for (let index2 = 0; index2 < array.length; index2 += 1) {
         comparateWordSize = array[index2].length;
         if (currentWordSize >= comparateWordSize) {
             checkNotLow += 1;
         }
-        values.push(checkNotLow);
     }
+    values.push(checkNotLow);
+    checkNotLow = 0;
 }
 
-for (index3 = 0; index3 < values.length; index3 += 1) {
+
+    let indexValue = ''; 
+
+for (let index3 = 0; index3 < values.length; index3 += 1) {
     let currentNumber = values[index3];
-    for (index4 = 0; index4 < values.length; index4 += 1){
+    
+    for (let index4 = 0; index4 < values.length; index4 += 1){
         if (currentNumber > values[index4]){
             highestValue += 1;
         }
     }
-    if (highestValue > (array.lenght - 1)) {
-        biggestString.push(array[values[index3]])
+    indexValue = array[index3];
+
+    if (highestValue >= (firstStringSize - 1)) {
+        biggestString.push(indexValue);
         break;
     } else {
         highestValue = 0;
