@@ -32,24 +32,23 @@ let highestValue = 0;
 let firstStringSize = array.length;
 
 
-
 function lettersCount() {
     let values = [];
     for (let index = 0; index < array.length; index += 1) {
         currentWordSize = array[index].length;
-        for (let index2 = 0; index2 < array.length; index2 += 1) {
-            comparateWordSize = array[index2].length;
-            if (currentWordSize >= comparateWordSize) {
-                checkNotLow += 1;
-            }
-        }
-        values.push(checkNotLow);
-        checkNotLow = 0;
+        values.push(currentWordSize);
     }
     return values;
 }
 
 console.log(lettersCount());
+
+
+
+
+
+
+
 
 
 
