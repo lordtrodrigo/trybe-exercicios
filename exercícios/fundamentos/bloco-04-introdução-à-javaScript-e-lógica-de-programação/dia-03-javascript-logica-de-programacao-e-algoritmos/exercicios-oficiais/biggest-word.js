@@ -1,5 +1,6 @@
 // 1 - RETORNA A MAIOR PALAVRA DO ARRAY
 
+let array = ['java', 'javascript', 'python', 'html', 'css'];
 
 // 0 criar uma variável para armazenar numeros de letras;
 // 0 criar uma variável para armazenar numeros de check quando uma string não for menor que a outra;
@@ -15,10 +16,6 @@
 // encontrar o maior numero do array antes vazio;
 // pegar o indice do maior numero do array antes vazio e consolar o array[index do maior numero do array antes vazio] 
 
-
-
-let array = ['java', 'javascript', 'python', 'html', 'css'];
-
 let currentWordSize = 0;
 
 let comparateWordSize = 0;
@@ -27,41 +24,33 @@ let checkNotLow = 0;
 
 let biggestString = [];
 
+let values = [];
+
 let highestValue = 0;
 
 let firstStringSize = array.length;
 
 
-
-function lettersCount() {
-    let values = [];
-    for (let index = 0; index < array.length; index += 1) {
-        currentWordSize = array[index].length;
-        for (let index2 = 0; index2 < array.length; index2 += 1) {
-            comparateWordSize = array[index2].length;
-            if (currentWordSize >= comparateWordSize) {
-                checkNotLow += 1;
-            }
+for (let index = 0; index < array.length; index += 1) {
+    currentWordSize = array[index].length;
+    for (let index2 = 0; index2 < array.length; index2 += 1) {
+        comparateWordSize = array[index2].length;
+        if (currentWordSize >= comparateWordSize) {
+            checkNotLow += 1;
         }
-        values.push(checkNotLow);
-        checkNotLow = 0;
     }
-    return values;
+    values.push(checkNotLow);
+    checkNotLow = 0;
 }
 
-console.log(lettersCount());
 
-
-
-
-
-let indexValue = '';
+    let indexValue = ''; 
 
 for (let index3 = 0; index3 < values.length; index3 += 1) {
     let currentNumber = values[index3];
-
-    for (let index4 = 0; index4 < values.length; index4 += 1) {
-        if (currentNumber > values[index4]) {
+    
+    for (let index4 = 0; index4 < values.length; index4 += 1){
+        if (currentNumber > values[index4]){
             highestValue += 1;
         }
     }

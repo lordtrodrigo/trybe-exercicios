@@ -41,15 +41,25 @@ function lettersCount() {
     return values;
 }
 
-console.log(lettersCount());
+function biggestNumber() {
+    let words = lettersCount();
+    let errorMessage = 'Erro!'
+    for (let index3 = 0; index3 < words.length; index3 += 1) {
+        let currentNumber = words[index3];
+        for (let index4 = 0; index4 < words.length; index4 += 1) {
+            if (currentNumber >= words[index4]) {
+                highestValue += 1;
+            }
+        }
+        if (highestValue >= array.length) {
+            return currentNumber;
+        } else {
+            highestValue = 0;
+        }
+    }
+}
 
-
-
-
-
-
-
-
+console.log(biggestNumber());
 
 
 
