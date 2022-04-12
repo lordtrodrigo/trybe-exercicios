@@ -1,6 +1,5 @@
 // 1 - RETORNA A MAIOR PALAVRA DO ARRAY
 
-
 // 0 criar uma variável para armazenar numeros de letras;
 // 0 criar uma variável para armazenar numeros de check quando uma string não for menor que a outra;
 // 0 criar uma variável para armazenar a string maior;
@@ -14,8 +13,6 @@
 // 8 ao final, adicionar valores encontrados de check num array vazio; 
 // encontrar o maior numero do array antes vazio;
 // pegar o indice do maior numero do array antes vazio e consolar o array[index do maior numero do array antes vazio] 
-
-
 
 let array = ['java', 'javascript', 'python', 'html', 'css'];
 
@@ -31,7 +28,6 @@ let highestValue = 0;
 
 let firstStringSize = array.length;
 
-
 function lettersCount() {
     let values = [];
     for (let index = 0; index < array.length; index += 1) {
@@ -41,7 +37,7 @@ function lettersCount() {
     return values;
 }
 
-function biggestNumber() {
+function biggestWord() {
     let words = lettersCount();
     let errorMessage = 'Erro!'
     for (let index3 = 0; index3 < words.length; index3 += 1) {
@@ -52,37 +48,11 @@ function biggestNumber() {
             }
         }
         if (highestValue >= array.length) {
-            return currentNumber;
+            return array[index3];
         } else {
             highestValue = 0;
         }
     }
 }
 
-console.log(biggestNumber());
-
-
-
-
-let indexValue = '';
-
-for (let index3 = 0; index3 < values.length; index3 += 1) {
-    let currentNumber = values[index3];
-
-    for (let index4 = 0; index4 < values.length; index4 += 1) {
-        if (currentNumber > values[index4]) {
-            highestValue += 1;
-        }
-    }
-    indexValue = array[index3];
-
-    if (highestValue >= (firstStringSize - 1)) {
-        biggestString.push(indexValue);
-        break;
-    } else {
-        highestValue = 0;
-    }
-}
-
-console.log(biggestString);
-
+console.log(biggestWord());
