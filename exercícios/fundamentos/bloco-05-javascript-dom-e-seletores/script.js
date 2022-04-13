@@ -45,21 +45,29 @@
         
         function upperCase() {
             // let text = '';
-            // for (let index = 0; index < document.getElementsByTagName('p').length; index += 0) {
-            //     text = document.getElementsByTagName('p')[index].innerText;
-            //     text = text.toUpperCase;
-            // }
-            
+            for (let index = 0; index < document.getElementsByTagName('p').length; index += 1) {
+                document.getElementsByTagName('p')[index].innerText = document.getElementsByTagName('p')[index].innerText.toUpperCase();
+                
+            }
             // let text = document.getElementsByTagName('p')[0].innerText;
             // text = text.toUpperCase();
 
-            document.getElementsByTagName('p')[0].innerText = document.getElementsByTagName('p')[0].innerText.toUpperCase();
-        
-
+            // document.getElementsByTagName('p')[0].innerText = document.getElementsByTagName('p')[0].innerText.toUpperCase();
         }
-
         upperCase();
-
         // let text = document.getElementsByTagName('p')[0].innerText;
 
+        
         // 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+
+        function pTags() {
+            document.getElementsByTagName('p').length
+            for (index = 0; index < document.getElementsByTagName('p').length; index += 1) {
+                console.log(document.getElementsByTagName('p')[index].innerText);
+            }
+        }
+
+        pTags();
+
+
+
