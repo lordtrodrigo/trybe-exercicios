@@ -38,8 +38,8 @@ addDays();
 
 // EXERCÍCIO 02
 
+let holidaysButton = document.createElement('button');
 function holidaysAlert(feriados) {
-    let holidaysButton = document.createElement('button');
     holidaysButton.innerText = feriados;
     holidaysButton.id = 'btn-holiday';
     let buttonsContainer = document.querySelector('.buttons-container');
@@ -47,3 +47,13 @@ function holidaysAlert(feriados) {
 }
 
 holidaysAlert('Feriados');
+
+
+// EXERCÍCIO 03
+
+function holidayClick() {
+    let holidaysToChange = document.getElementsByClassName('holiday');
+    holidaysToChange.style.backgroundColor = rgb(238,238,238);
+    // holidaysToChange.addEventListener('click', rgb(238,238,238));
+}
+holidaysButton.addEventListener('click', holidayClick);
