@@ -1,3 +1,9 @@
+let holidaysButton = document.createElement('button');
+
+
+
+
+
 function createDaysOfTheWeek() {
     const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
     const weekDaysList = document.querySelector('.week-days');
@@ -38,7 +44,6 @@ addDays();
 
 // EXERCÍCIO 02
 
-let holidaysButton = document.createElement('button');
 function holidaysAlert(feriados) {
     holidaysButton.innerText = feriados;
     holidaysButton.id = 'btn-holiday';
@@ -52,8 +57,14 @@ holidaysAlert('Feriados');
 // EXERCÍCIO 03
 
 function holidayClick() {
-    let holidaysToChange = document.getElementsByClassName('holiday');
-    holidaysToChange.style.backgroundColor = rgb(238,238,238);
+    const hldButton = document.getElementById('btn-holiday');
+    hldButton.addEventListener('click', function() {
+        let holidaysToChange = document.getElementsByClassName('holiday');
+        for (let hlds of holidaysToChange) {
+            hlds.style.backgroundColor = 'rgb(0, 255, 0)';
+        }
     // holidaysToChange.addEventListener('click', rgb(238,238,238));
+    });
 }
-holidaysButton.addEventListener('click', holidayClick);
+
+holidayClick();
