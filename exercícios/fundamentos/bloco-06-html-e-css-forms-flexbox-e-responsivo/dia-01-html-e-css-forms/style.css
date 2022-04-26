@@ -23,7 +23,7 @@ main {
 }
 
 .main-content input[type="text"], input[type="e-mail"]{
-    margin: 10px 0px;
+    margin: 10px 0px 20px;
     padding: 7px;
     width: 100%;
     border-radius: 3px;
@@ -31,7 +31,7 @@ main {
 
 .main-content {
     /* display: block; */
-    margin: 10px 0px 25px;
+    margin: 25px 0px 25px;
 
 }
 
