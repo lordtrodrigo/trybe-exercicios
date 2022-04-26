@@ -18,11 +18,30 @@
     <main>
         <div class="main-content">
             <label for="name">Nome Completo:
-                <input type="text" id="name" name="nome" placeholder="Digite seu nome completo" required minlength="10" maxlength="40">
+                <input type="text" id="name" name="nome" placeholder="Digite seu nome completo" required minlength="10"
+                    maxlength="40">
             </label>
             <label for="email">E-mail:
                 <input type="e-mail" id="email" placeholder="Digite seu e-mail" required minlength="10" maxlength="50">
             </label>
+        </div>
+
+        <div class="main-content">
+            <fieldset>
+                <legend>Destino Preferido:</legend>
+                <label for="city">
+                    <input type="radio" id="city" name="destinity">Cidade
+                </label>
+                <label for="camp">
+                    <input type="radio" id="camp" name="destinity">Campo
+                </label>
+                <label for="beach">
+                    <input type="radio" id="beach" name="destinity">Praia
+                </label>
+                <label for="mountain">
+                    <input type="radio" id="mountain" name="destinity">Montanha
+                </label>
+            </fieldset>
         </div>
     </main>
 </body>

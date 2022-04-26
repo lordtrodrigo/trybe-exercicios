@@ -22,14 +22,23 @@ main {
     border-radius: 3px;
 }
 
-.main-content input{
-    display: block;
+.main-content input[type="text"], input[type="e-mail"]{
     margin: 10px 0px 25px;
     padding: 7px;
     width: 100%;
     border-radius: 3px;
 }
 
+.main-content {
+    /* display: block; */
+}
+
+fieldset {
+    border-radius: 3px;
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0px;
+}
 
 
 /* rgb(225, 229, 235) */
