@@ -23,7 +23,7 @@ main {
 }
 
 .main-content input[type="text"], input[type="e-mail"]{
-    margin: 10px 0px 25px;
+    margin: 10px 0px;
     padding: 7px;
     width: 100%;
     border-radius: 3px;
@@ -31,14 +31,21 @@ main {
 
 .main-content {
     /* display: block; */
+    margin: 10px 0px 25px;
+
 }
 
 fieldset {
     border-radius: 3px;
-    width: 100%;
+    width:;
     padding: 20px;
     margin: 10px 0px;
 }
 
-
+textarea {
+    resize: none;
+    margin: 10px 0px 25px;
+    width: 100%;
+    border-radius: 3px;
+}
 /* rgb(225, 229, 235) */
