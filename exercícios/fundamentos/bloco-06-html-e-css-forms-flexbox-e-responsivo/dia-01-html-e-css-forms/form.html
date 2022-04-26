@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,23 @@
     <title>Formulário TrybeTrip</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <Header>
         <h1>Formulário TrybeTrip</h1>
         <em>Preencha o formulário e concorra a uma viagem totalmente paga e com várias opções de destino.</em>
     </Header>
+
+    <main>
+        <div class="main-content">
+            <label for="name">Nome Completo:
+                <input type="text" id="name" name="nome" placeholder="Digite seu nome completo" required minlength="10" maxlength="40">
+            </label>
+            <label for="email">E-mail:
+                <input type="e-mail" id="email" placeholder="Digite seu e-mail" required minlength="10" maxlength="50">
+            </label>
+        </div>
+    </main>
 </body>
+
 </html>
