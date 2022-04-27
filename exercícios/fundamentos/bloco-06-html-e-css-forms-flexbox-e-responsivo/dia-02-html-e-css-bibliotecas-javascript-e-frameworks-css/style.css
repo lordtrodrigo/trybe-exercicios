@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(218, 218, 218);
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+}
+
+header {
+    color: white;
+    background-color: rgb(3,107,82);
+    text-align: center;
+    padding: 50px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+main {
+    color: rgb(48, 48, 48);
+    background-color: white;
+    margin: 20px 0px 50px;
+    padding: 50px;
+    border-radius: 3px;
+}
+
+.main-content input[type="text"], input[type="e-mail"]{
+    margin: 10px 0px 20px;
+    padding: 7px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.main-content {
+    /* display: block; */
+    margin: 25px 0px 25px;
+
+}
+
+fieldset {
+    border-radius: 3px;
+    width:;
+    padding: 20px;
+    margin: 10px 0px;
+}
+
+textarea {
+    resize: none;
+    margin: 10px 0px 25px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+input[type='checkbox'] {
+    margin-top: 20px;
+}
+
+.check {
+    display: block;
+    /* margin-top: 20px; */
+}
+
+button {
+    padding: 5px 100px;
+    margin-top: 25px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.button {
+    text-align: center;
+}
