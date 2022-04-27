@@ -6,68 +6,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário TrybeTrip</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <Header>
-        <h1>Formulário TrybeTrip</h1>
-        <em>Preencha o formulário e concorra a uma viagem totalmente paga e com várias opções de destino.</em>
+    <Header class="container text-center mt-3 mb-3">
+        <h1 class="display-4">Formulário TrybeTrip</h1>
+        <em class="lead">Preencha o formulário e concorra a uma viagem totalmente paga e com várias opções de
+            destino.</em>
     </Header>
 
     <main>
-        <form action="" method="post">
-            <div class="main-content">
-                <label for="name">Nome Completo:
+        <form action="" method="post" class="container">
+            <div class="container">
+                <label for="name" class="form-label ">Nome Completo:
                     <input type="text" id="name" name="nome" placeholder="Digite seu nome completo" required
-                        minlength="10" maxlength="40">
+                        minlength="10" maxlength="40" class="form-control">
                 </label>
-                <label for="email">E-mail:
+            </div>
+
+            <div class="container mb-3">
+                <label for="email" class="form-label">E-mail:
                     <input type="e-mail" id="email" placeholder="Digite seu e-mail" required minlength="10"
-                        maxlength="50">
+                        maxlength="50" class="form-control">
                 </label>
             </div>
 
-            <div class="main-content">
-                <fieldset>
-                    <legend>Destino Preferido:</legend>
+            <section class="container mb-3">
+                <legend>Destino Preferido:</legend>
+                <div class="form-check">
                     <label for="city">
-                        <input type="radio" id="city" name="destinity">Cidade
+                        <input type="radio" id="city" name="destinity" class="form-check-input">Cidade
                     </label>
+                </div>
+
+                <div class="form-check">
                     <label for="camp">
-                        <input type="radio" id="camp" name="destinity">Campo
+                        <input type="radio" id="camp" name="destinity" class="form-check-input">Campo
                     </label>
+                </div>
+
+                <div class="form-check">
                     <label for="beach">
-                        <input type="radio" id="beach" name="destinity">Praia
+                        <input type="radio" id="beach" name="destinity" class="form-check-input">Praia
                     </label>
+                </div>
+
+                <div class="form-check">
                     <label for="mountain">
-                        <input type="radio" id="mountain" name="destinity">Montanha
+                        <input type="radio" id="mountain" name="destinity" class="form-check-input">Montanha
                     </label>
-                </fieldset>
-            </div>
-            <div class="main-content">
-                <label for="why-win">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
-                    <textarea name="why-win" id="why-win" cols="30" rows="10"></textarea>
-                </label>
-                <label for="date">Qual a melhor data para realizar sua viagem?
-                    <input name="date" type="date" id="date">
+                </div>
+            </section>
+            <div class="container mb-3">
+                <label for="why-win" class="form-label">Por que você deveria ser a pessoa desenvolvedora a ganhar o
+                    concurso TrybeTrip?
+                    <textarea name="why-win" id="why-win" cols="30" rows="10" class="form-control"></textarea>
                 </label>
             </div>
 
-            <div class="main-content">
-                <label for="oportunities" class="check">
-                    <input type="checkbox" id="oportunities">
-                    Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+            <div class="container mb-3">
+                <label for="date" class="form-label">Qual a melhor data para realizar sua viagem?
+                    <input name="date" type="date" id="date" class="form-control">
                 </label>
-                <label for="photos" class="check">
-                    <input type="checkbox" id="photos">
-                    Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
-                </label>
+            </div>
+            <Section class="mb-3">
+                <div class="container form-check form-switch">
+                    <label for="oportunities" class="check form-label">
+                        <input type="checkbox" id="oportunities" class="form-check-input">
+                        Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+                    </label>
+                </div>
+                <div class="container form-check form-switch">
+                    <label for="photos" class="check form-label">
+                        <input type="checkbox" id="photos" class="form-check-input">
+                        Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                    </label>
+                </div>
+            </Section>
+
+            <section>
+            <div class="container">
+                <button type="submit" value="submit" class="btn btn-dark">Enviar</button>
             </div>
 
-            <div class="button">
-                <button type="submit" value="submit">Enviar</button>
+            <div class="container">
+                <button type="reset" value="submit" class="btn btn-light">Cancelar
+                </button>
             </div>
+            </section>
         </form>
     </main>
 
