@@ -1,5 +1,4 @@
-const formatedBookNames = require('./exercise-01');
-
+const nameAndAge = require('./exercise-02');
 
 const books = [
     {
@@ -64,18 +63,37 @@ const books = [
     },
   ];
 
-describe('01 - Testes para a função formatedBookNames(array)', () => {
-    it('Verifica se formatedBookNames(array) é uma função', () => {
-        expect(typeof formatedBookNames).toBe('function');
+
+  describe('02 - Testes para a função nameAndAge(array)', () => {
+    it('Verifica se nameAndAge(array) é uma função', () => {
+        expect(typeof nameAndAge).toBe('function');
     });
-    it('Verifica se ao receber o array books retorna o array esperado', () => {
-        expect(formatedBookNames(books)).toEqual([
-            'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-            'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-            'Fundação - Ficção Científica - Isaac Asimov',
-            'Duna - Ficção Científica - Frank Herbert',
-            'A Coisa - Terror - Stephen King',
-            'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
-        ]);
+    it('Verifica se ao receber o array books tem o retorno esperado', () => {
+        expect(nameAndAge(books)).toEqual([
+            {
+              age: 31,
+              author: 'Isaac Asimov',
+            },
+            {
+              age: 38,
+              author: 'H. P. Lovecraft',
+            },
+            {
+              age: 39,
+              author: 'Stephen King',
+            },
+            {
+              age: 43,
+              author: 'George R. R. Martin',
+            },
+            {
+              age: 45,
+              author: 'Frank Herbert',
+            },
+            {
+              age: 62,
+              author: 'J. R. R. Tolkien',
+            },
+          ]);
     });
 });
