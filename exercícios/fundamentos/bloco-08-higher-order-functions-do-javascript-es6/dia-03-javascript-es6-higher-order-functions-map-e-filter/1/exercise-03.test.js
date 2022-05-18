@@ -1,4 +1,4 @@
-const nameAndAge = require('./exercise-03');
+const fantasyOrScienceFiction = require('./exercise-03');
 
 const books = [
     {
