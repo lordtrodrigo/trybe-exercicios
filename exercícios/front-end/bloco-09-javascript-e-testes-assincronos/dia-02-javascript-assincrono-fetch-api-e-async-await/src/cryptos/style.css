@@ -1,9 +1,15 @@
 body {
-    margin: 0;
+    margin: 0px;
     font-family: monospace, sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    /* width: 100vw; */
+    height: 100vw;
+    background-color: rgb(218, 218, 218);
+    /* align-items: stretch; */
+    justify-content: space-between;
+    /* border: 10px solid red; */
+
 }
 
 header {
@@ -24,13 +30,12 @@ svg {
 main {
     display: flex;
     justify-content: center;
-    background-color: rgb(218, 218, 218);
 }
 
 li {
     padding: 1em 50px;
     border: 1px solid rgb(46, 46, 46);
-    margin: 0.5em;
+    margin: 15px;
     border-radius: 0.5em;
     display: flex;
     justify-content: center;
@@ -50,4 +55,5 @@ footer {
     font-size: 0.7em;
     color: white;
     padding: 5em;
+    margin: 0px;
 }
