@@ -1,0 +1,36 @@
+.App {
+  /* display: flex;
+ flex-wrap: wrap; */
+ background-color: rgb(255, 252, 206);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: rgb(61, 61, 61);
+}
+
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: space-around;
+}
+
+.pokemon-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid rgb(204, 204, 204);
+  margin: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  min-width: 45%;
+  max-width: 75%;
+  background-color: #fff;
+}
+
+.pokemon {
+  display: flex;
+}
